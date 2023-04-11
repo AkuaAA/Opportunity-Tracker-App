@@ -1,0 +1,15 @@
+{% extends "tracker/base.html" %}
+{% block content %}
+    {% for opportunity in opportunities %}
+    <article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{ opportunity.author }}</a>
+            <small class="text-muted">{{ opportunity.date_posted }}</small>
+          </div>
+          <h2><a class="article-title" href="#">{{ opportunity.title }}</a></h2>
+          <p class="article-content">{{ opportunity.content }}</p>
+        </div>
+      </article>
+    {% endfor %}
+{% endblock content %}
