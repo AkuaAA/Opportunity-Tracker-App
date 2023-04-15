@@ -5,7 +5,7 @@
         <div class="media-body">
           <div class="article-metadata">
             <a class="mr-2" href="#">{{ opportunity.author }}</a>
-            <small class="text-muted">{{ opportunity.date_posted }}</small>
+            <small class="text-muted">{{ opportunity.date_posted|date:"F d, y" }}</small>
           </div>
           <h2><a class="article-title" href="#">{{ opportunity.title }}</a></h2>
           <p class="article-content">{{ opportunity.content }}</p>
