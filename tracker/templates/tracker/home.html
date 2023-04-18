@@ -1,11 +1,12 @@
 {% extends "tracker/base.html" %}
+{% load static %}
 {% block content %}
 <body>
-  
+
     <h1>CSU Opportunity Tracker!</h1>
     <div class="card-deck">
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+          <img class="card-img-top" src="tracker\static\tracker\Customer-Experience-.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Customer Projects</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -13,7 +14,7 @@
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+          <img class="card-img-top" src="tracker\static\erg.png" alt="">
           <div class="card-body">
             <h5 class="card-title">ERG Projects</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -21,9 +22,9 @@
         </div>
 
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+          <img class="card-img-top" src="{% static 'volunteering.png'}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Volunteering ProjectsS</h5>
+            <h5 class="card-title">Volunteering Projects</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
         </div>

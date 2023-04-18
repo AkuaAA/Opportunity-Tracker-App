@@ -6,8 +6,15 @@
           <div class="article-metadata">
             <a class="mr-2" href="#">{{ opportunity.author }}</a>
             <small class="text-muted">{{ opportunity.date_posted|date:"F d, y" }}</small>
+            {% if object.author == user %}
+              <div>
+                <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'opportunity-update' object.id %}">Update</a>
+                <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'opportunity-delete' object.id %}">Delete</a>
+              </div>
+              
+            {% endif %}
           </div>
-          <h2><a class="article-title" href="#">{{ opportunity.title }}</a></h2>
+          <h2><a class="article-title" href="{% url 'opportunity-detail' opportunity.id %}">{{ opportunity.title }}</a></h2>
           <p class="article-content">{{ opportunity.content }}</p>
         </div>
       </article>
