@@ -2,33 +2,51 @@
 {% load static %}
 {% block content %}
 <body>
+  <style>
+  .bg-1 {
+  background: #2d2d30;
+  color: #blue;
+  }
+  .bg-1 h3 {color: white;}
+  .bg-1 p {font-style: italic;}
 
-    <h1>CSU Opportunity Tracker!</h1>
-    <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="tracker\static\tracker\Customer-Experience-.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Customer Projects</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+  .bg-2 {
+    background-color: turquoise; 
+    color: #ffffff;
+  }
+</style>
+  
+    <body>
+      <div class="container">
+        <h1>Welcome!</h1>
+        <br>
+      </div>
+    </body>
+    <div class="container-fluid bg-2 text-center">
+      <h3></h3>
+      <p>..</p>
+    </div>
+      <div class="container-flud">
+          <h5 class="card-title">Never Miss An Opportunity Again!</h5>
+          <p class="card-text">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​It’s never been easier to make an impact and find opportunities than now! Whether you're looking for in-person events ideas or virtual options, we’ll help you find a good fit. You can also get updates by joining the Opportunity tracker squad  at Microsoft community on Teams, and we'll share opportunities with you as we hear before it goes live!
+          And with the Microsoft Give Match, every hour you volunteer may be eligible for a USD25 match to the nonprofit you choose to support. In order to determine if your volunteer time is eligible, please visit the Giving Program guidelines. Help the community out also by filling in any opportunities you may have come across. ERG and Volunteering specific to the CSU will be uploaded very soon, be on the look out
+          </p>
         </div>
-
-        <div class="card">
-          <img class="card-img-top" src="tracker\static\erg.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">ERG Projects</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
+      </div>
+      <div class="bg-1">
+        <div class="container">
+          <h3 class="text-center">Look Out For</h3>
+          <p class="text-center">Join the teams community <br> Be the first to find out about opportunities!</p>
+      
+          <ul class="list-group">
+            <li class="list-group-item">ERG's Opportunities!</li>
+            <li class="list-group-item">Volunteering Opportunities!</li>
+            <li class="list-group-item">Career Development</li>
+          </ul>
         </div>
-
-        <div class="card">
-          <img class="card-img-top" src="{% static 'volunteering.png'}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Volunteering Projects</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>  
+      </div>
+    
+      </div>
 {% endblock content %}
 
 

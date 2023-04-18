@@ -18,6 +18,7 @@ class OpportunityListView(ListView):
     template_name = 'tracker/home.html'
     context_object_name = 'opportunities'
     ordering = ['-date_posted']
+    paginate_by = 5
 
 
 class OpportunityDetailView(DetailView):
