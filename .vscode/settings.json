@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "fpdx",
-        "lvlx"
+        "gunicorn",
+        "lvlx",
+        "wsgi"
     ]
 }
