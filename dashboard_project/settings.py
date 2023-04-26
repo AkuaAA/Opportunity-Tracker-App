@@ -21,12 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!%ksw)2#m*&&1(5^d@g_1mk!m+lvlx)w_w15)-fpdx@(-sn=5p'
+#SECRET_KEY = 'django-insecure-!%ksw)2#m*&&1(5^d@g_1mk!m+lvlx)w_w15)-fpdx@(-sn=5p'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['csuopportunitytrackerapp.herokuapp.com']
 
 
 # Application definition
@@ -123,7 +124,7 @@ USE_TZ = True
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_ROOT = os.path.join(BASE_DIR,"static_files")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
